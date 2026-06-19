@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Inscrição - ENEM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Portal de Inscrição - ENEM</header>
+
+    <form id="formCadastro">
+    <label for="nome">Digite o seu nome completo</label><br>
+    <input type="text" id="nome" placeholder="Digite o seu nome completo"><br><br>
+    <span class="erro-msg" id="erro-nome"></span><br><br>
+    <label for="email">Digite o seu email</label><br>
+    <input type="text" id="email" placeholder="seuemail@gmail.com"><br><br>
+    <span class="erro-msg" id="erro-email"></span><br><br>
+    <label for="telefone">Digite o seu número de telefone</label><br>
+    <input type="text" id="telefone" placeholder="+55(00)00000-0000"><br><br>
+    <span class="erro-msg" id="erro-telefone"></span><br><br>
+    <label for="nomeMae">Digite o nome completo de sua mãe</label><br>
+    <input type="text" id="nomeMae" placeholder="Digite o nome completo de sua mãe"><br><br>
+    <span class="erro-msg" id="erro-nomeMae"></span><br><br>
+    <label for="nomePai">Digite o nome completo de seu pai</label><br>
+    <input type="text" id="nomePai" placeholder="Digite o nome completo de seu pai"><br><br>
+    <span class="erro-msg" id="erro-nomePai"></span><br><br>
+    <label for="endereco">Digite o seu endereço(Rua/Avenida)</label><br>
+    <input type="text" id="endereco" placeholder="Rua das flores"><br><br>
+    <span class="erro-msg" id="erro-endereco"></span><br><br>
+    <label for="numero">Digite o número de sua residência</label><br>
+    <input type="number" id="numero" placeholder="N°2121"><br><br>
+    <span class="erro-msg" id="erro-numero"></span><br><br>
+    <label for="cidade">Digite a cidade em que você mora</label><br>
+    <input type="text" id="cidade" placeholder="Campinas"><br><br>
+    <span class="erro-msg" id="erro-cidade"></span><br><br>
+    <label for="estado">Selecione o estado em que você mora</label><br>
+    <select id="estado">
+        <option value="">Selecione o estado</option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+    </select>
+    <span class="erro-msg" id="erro-estado"></span><br><br>
+    <label for="pais">Digite o país em que você mora</label><br>
+    <input type="text" id="pais" placeholder="Brasil"><br><br>
+    <span class="erro-msg" id="erro-pais"></span><br><br>
+    <label for="situacaoEM">Selecione sua situação do ensino médio</label><br><br>
+        <select id="situacaoEM">
+        <option value="">Selecione</option>
+        <option value="conclui">Já concluí</option>
+        <option value="cursando">Estou cursando</option>
+        </select>
+    <span class="erro-msg" id="erro-situacaoEM"></span><br><br>
+    <label for="tipoEscola">Selecione o tipo de Escola em que você estudou</label><br>
+        <select id="tipoEscola">
+        <option value="">Selecione</option>
+        <option value="publica">Pública</option>
+        <option value="privada">Privada</option>
+        </select>
+    <span class="erro-msg" id="erro-tipoEscola"></span><br><br>
+    <label for="senha">Crie uma Senha</label><br>
+    <input type="password" id="senha" placeholder="Mínimo 8 caracteres, 1 maiúscula"><br><br>
+    <span class="erro-msg" id="erro-senha"></span><br><br>
+    <label for="confirmarSenha">Confirme sua Senha</label><br>
+    <input type="password" id="confirmarSenha" placeholder="Repita a senha"><br><br>
+    <span class="erro-msg" id="erro-confirmarSenha"></span><br><br>
+    <p id="resultado"></p>
+    <button type="submit" class="botao botao-amarelo">Salvar Inscrição</button>
+    <button type="button" class="botao botao-verde" id="btnVoltar">Voltar</button>
+    </form>
+
+    <footer>©️ 2026 - Portal ENEM. Todos os direitos reservados.</footer>
+    <script src="enem.js"></script>
+</body>
+</html>
